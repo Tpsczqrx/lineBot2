@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     a=os.environ['Authorization']
-    try:
+
         f = open("student.csv", "r")
         for line in f.readlines():
             print(line)
